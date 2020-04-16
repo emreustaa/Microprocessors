@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"adcconverter\startup_stm32f407xx.o"
+"adcconverter\main.o"
+"adcconverter\stm32f4xx_it.o"
+"adcconverter\stm32f4xx_hal_msp.o"
+"adcconverter\stm32f4xx_hal_adc.o"
+"adcconverter\stm32f4xx_hal_adc_ex.o"
+"adcconverter\stm32f4xx_hal_rcc.o"
+"adcconverter\stm32f4xx_hal_rcc_ex.o"
+"adcconverter\stm32f4xx_hal_flash.o"
+"adcconverter\stm32f4xx_hal_flash_ex.o"
+"adcconverter\stm32f4xx_hal_flash_ramfunc.o"
+"adcconverter\stm32f4xx_hal_gpio.o"
+"adcconverter\stm32f4xx_hal_dma_ex.o"
+"adcconverter\stm32f4xx_hal_dma.o"
+"adcconverter\stm32f4xx_hal_pwr.o"
+"adcconverter\stm32f4xx_hal_pwr_ex.o"
+"adcconverter\stm32f4xx_hal_cortex.o"
+"adcconverter\stm32f4xx_hal.o"
+"adcconverter\stm32f4xx_hal_exti.o"
+"adcconverter\stm32f4xx_hal_tim.o"
+"adcconverter\stm32f4xx_hal_tim_ex.o"
+"adcconverter\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "ADCConverter\ADCConverter.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ADCConverter.map" -o ADCConverter\ADCConverter.axf
