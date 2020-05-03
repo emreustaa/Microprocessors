@@ -1,0 +1,3 @@
+	AREA myExam, CODE
+		ENTRY
+	
